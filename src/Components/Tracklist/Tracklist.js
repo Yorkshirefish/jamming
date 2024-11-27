@@ -1,15 +1,15 @@
 import React from 'react';
-import './Tracklist.css';
+import './TrackList.css';
 import Track from '../Track/Track';
 
-function Tracklist(props) {
+function TrackList(props) {
     return(
         <div className="TrackList">
             {props.tracks?.map(track=> (
-                <Track key={track.id} track={track}/>
+                <Track key={track.id} track={track} onAdd={props.onAdd} isRemoval={props.isRemoval}/>
             ))}
         </div>
     )
 }
 
-export default Tracklist;
+export default TrackList;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Tracklist from '../Tracklist/Tracklist';
+import Tracklist from '../TrackList/TrackList';
 import '../Playlist/Playlist.css';
 
 function Playlist(props) {
